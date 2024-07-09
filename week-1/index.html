@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Cricket World</h1>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#get-started">Get Started</a></li>
+                <li><a href="#interactive">Interactive</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="overview">
+            <h2>Game Overview</h2>
+            <p>Cricket is a bat-and-ball game played between two teams of eleven players. It is a sport with rich history and has produced many memorable moments and legendary players. The game is known for its strategic depth, exciting gameplay, and passionate fan base.</p>
+            <img src="cricket-overview.jpeg" alt="Cricket Overview">
+        </section>
+
+        <section id="highlights">
+            <h2>Game Highlights</h2>
+            <div class="highlights-content">
+                <div class="highlight">
+                    <h3>Memorable Moments</h3>
+                    <p>Cricket has seen countless unforgettable moments, from breathtaking catches to thrilling last-ball finishes. These moments define the sport and captivate fans around the world.</p>
+                    <img width="800" src="team-india-t20-world-cup-trophy.webp" alt="Memorable Moments">
+                </div>
+                <div class="highlight">
+                    <h3>Key Players</h3>
+                    <p>Cricket has produced many iconic players, such as Sachin Tendulkar, Don Bradman, and Virat Kohli. These legends have left an indelible mark on the game with their exceptional skills and performances.</p>
+                    <img width="800" src="legneds.jpg" alt="Key Players">
+                </div>
+                <div class="highlight">
+                    <h3>Tournaments</h3>
+                    <p>Cricket features prestigious tournaments like the ICC World Cup, T20 World Cup, and The Ashes. These events bring together the best teams and players, offering high-stakes competition and drama.</p>
+                    <img width="800" src="tournaments.jpg" alt="Tournaments">
+                </div>
+            </div>
+        </section>
+
+        <section id="get-started">
+            <h2>How to Get Started</h2>
+            <p>Starting your journey in cricket is simple. Follow these steps to get involved:</p>
+            <ul>
+                <li>Purchase basic cricket gear: a bat, ball, and protective equipment.</li>
+                <li>Find a local club or community group to join.</li>
+                <li>Practice fundamental skills: batting, bowling, and fielding.</li>
+                <li>Watch professional matches to learn strategies and techniques.</li>
+            </ul>
+            <img width="800" src="download.jpeg" alt="Get Started">
+        </section>
+
+        <section id="interactive">
+            <h2>Interactive Element</h2>
+            <div id="quiz">
+                <h3>Test Your Knowledge</h3>
+                <p>What is the maximum number of overs a bowler can bowl in a One Day International match?</p>
+                <button onclick="checkAnswer('correct')">A. 10 overs</button>
+                <button onclick="checkAnswer('wrong')">B. 20 overs</button>
+                <button onclick="checkAnswer('wrong')">C. 15 overs</button>
+            </div>
+            <div id="slideshow">
+                <h3>Cricket Gallery</h3>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img width="600" src="s1.jpg" >
+                    </div>
+                    <div class="mySlides fade">
+                        <img width="600" src="s3.jpg">
+                    </div>
+                    <div class="mySlides fade">
+                        <img width="600" src="s2.jpg" >
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <p>&copy; 2024 Cricket World. All rights reserved.</p>
+        <a target="_blank" href="https://www.bcci.tv/">Official Cricket Website</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
